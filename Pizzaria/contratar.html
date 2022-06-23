@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <ul id="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="contratar.html">Contratar</a>
+            </li>
+            <li>
+                <a href="ajuda.html">Ajuda</a>
+            </li>
+            <li>
+                <a href="unidades.html">Unidades</a>
+            </li>
+        </ul>
+
+        <img class="placa" src="assets/img/placa3.png" alt="toda banda junta">
+
+        <svg id="curve" viewbox="0 0 100 25">
+            <path d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+        </svg>
+
+    </header>
+
+    <section class="base">
+        <h1 class="center">Sinta-se à vontade para nos contratar!</h1>
+        <p class="center">Garantimos um maravilhoso serviço!</p>
+        <p class="center">Basta preencher todos os dados que vamos entrar em contato para possíveis
+            mais informações.
+        </p>
+
+        <form class="form">
+            <fieldset>
+                <legend>Formulário</legend>
+                <div class="form-control">
+                    <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" onkeyup='validaNome()'> 
+                <div id="txtNome"></div>  
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="email@email.com" onkeyup='validaEmail()'>
+                <div id="txtEmail"></div> 
+                </div>
+
+                <div class="form-control">
+                    <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" onkeyup='validaTelefone()' placeholder="9999-9999 ou 9999-99999" maxlength='9'>
+                <div id="txtTelefone"></div>
+                </div>
+
+                <div class="form-control">
+                    <label for="data">Data e Horário:</label>
+                <input type="datetime-local" id="data">
+                </div>
+
+                <div class="form-control option">
+                    <label for="pizza">Pizza</label>
+                <input type="checkbox" name="pizza" id="pizza">
+                <label for="pizza">Banda</label>
+                <input type="checkbox" name="banda" id="banda">
+                </div>
+                                
+                <p>Se escolheu a opção de pizzas, por favor preencha a seguir:</p>
+
+                <div class="form-control">
+                    <label for="quantidade">Digite a quantidade:</label>
+                <input type="number" id="quantidade" placeholder="Quantidade máxima é de 33" max='33'>
+                </div>
+                
+                <div class="form-control">
+                    <label for="sabor">Escolha os sabores:</label>
+                <textarea name="sabor" id="sabor" cols="30" rows="3" placeholder="Digite os sabores"></textarea>
+                </div>
+                
+                <div class="form-control">
+                    <label for="restricao">Alguma restrição?</label>
+                <textarea name="restricao" id="restricao" cols="20" rows="3" placeholder="Digite suas restrições ou observações"></textarea>
+                </div>
+                
+                <input onclick='enviar()' type="submit" value="Enviar" class="enviar-btn" >
+            </fieldset>
+            
+        </form>
+    </section>  
+
+    <hr>    
+    <footer class="rodape">
+        <div class="container">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="tm-social redes" src="assets/img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img class="tm-social redes" src="assets/img/twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="tm-social redes" src="assets/img/instagram.png" alt="instagram">
+            </a>
+            <a href="https://github.com/joce-line" target="_blank">
+                <img class="tm-social redes" src="assets/img/github.png" alt="github">
+            </a>
+        </div>
+        <p class="center">
+            Todos os direitos reservados: Joceline Gutierrez &copy;
+        </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

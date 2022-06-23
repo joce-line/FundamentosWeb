@@ -1,0 +1,174 @@
+/*Estilos da Home*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1e5a0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(139, 22, 22, 0.863), rgb(234, 123, 25));
+    width: 100%;
+    height: 100vh;
+}
+
+.base {
+    width: 100%;
+    
+}
+
+#menu {
+    margin: 0;
+    padding-top: 30px;
+    height: 30px;
+    text-align: center;
+    
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color: rgb(36, 2, 2);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color: rgb(184, 181, 181);
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+
+}
+
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path {
+    fill: #f1e5a0
+}
+
+
+.center {
+    text-align: center;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 250px;
+    border-radius: 20%;
+    padding: 25px;
+}
+
+
+.redes {
+    width: 30px;
+    padding: 20px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+
+.name {
+    text-align: center;
+    font-size: 40xp;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.placa {
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 410px;
+}
+
+.rodape {
+    width: 100%;
+}
+
+/*Estilos de Contratar*/
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+label {
+    line-height: 30px;
+}
+
+.enviar-btn {
+    background-color: rgb(176, 233, 233);
+    padding: 4px;
+    margin-top: 17px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+fieldset {
+    display: block;
+    margin: 12px;
+    padding: 32px;
+    border-width: 1.5px;
+    border-style: groove;
+    border-color: black;
+}
+
+.option {
+    display: flex;
+    align-items: baseline;
+    margin: 15px;
+    padding: 20px;
+}
+
+/* Estilos de Unidades */
+
+.unidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.unidades li {
+    padding: 20px;
+}
